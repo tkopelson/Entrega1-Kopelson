@@ -1,0 +1,22 @@
+{% extends "blogapp/padre.html" %}
+
+{% load static %}
+
+{% block contenido %}
+<br>
+<p align="center"> Estoy en resultado de la busqueda de alumnos </p>
+<br>
+
+ {% if alumnos %}
+ <ul>
+ {% for alumno in alumnos %}
+ <li>Nombre: {{alumno.nombre}}</li>
+ <li>Pais: {{alumno.pais}}</li>
+ {% endfor%}
+ {% else %}
+ <p>No se encontraron alumnos</p>
+ </ul>
+ {% endif %}
+
+
+{% endblock%}

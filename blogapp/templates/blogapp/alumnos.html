@@ -1,0 +1,25 @@
+
+{% extends "blogapp/padre.html" %}
+
+{% load static %}
+
+{% block contenido %}
+
+
+<form align="center" action="alta_alumnos" method="POST">
+    {% csrf_token %}
+    <p>Ingresar un alumno: </p>
+    <p>Nombre:</p>
+    <input type="text" name="nombre">
+    <p>Pais: </p>
+    <input type="text" name="pais">
+
+<br>
+<br>
+
+    <input type="submit" value="Enviar">
+<br>
+<br>
+</form>
+
+{% endblock%}

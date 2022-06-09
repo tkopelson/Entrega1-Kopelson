@@ -1,0 +1,18 @@
+
+{% extends "blogapp/padre.html" %}
+
+{% load static %}
+
+{% block contenido %}
+
+<p align="center">Estoy en Buscar alumnos</p>
+
+<form align="center" action="buscar" method="GET">
+    <p>Nombre del alumno a buscar:</p>
+    <input type="text" name="nombre" id="nombre">
+    <input type="submit" value="Buscar">
+</form> 
+
+<br>
+
+{% endblock%}

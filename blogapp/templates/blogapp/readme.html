@@ -1,32 +1,17 @@
+
 {% extends "blogapp/padre.html" %}
 
 {% load static %}
 
 {% block contenido %}
 
-<div class="container position-relative px-4 px-lg-5">
-    <div class="row gx-4 gx-lg-5 justify-content-center">
-        <div class="col-md-10 col-lg-8 col-xl-7">
-        
-
-<p>Estoy en el readme, heredado desde el html padre.</p>
-
-<form action="alta_alumnos" method="POST">
-    {% csrf_token %}
-    <p>Nombre:</p>
-    <input type="text" name="nombre">
-    <p>Pais: </p>
-    <input type="text" name="pais">
+<p align="center">Estoy en el readme</p>
 
 <br>
-<br>
 
-    <input type="submit" value="Enviar">
-<br>
-<br>
-</form>
+<p align="center">Instrucciones: </p>
 
-        </div>
-    </div>
-</div>
+
+<p align="center">Deberá clickear cada item del nav para cambiar de pestaña y este le redireccionará a la pestaña deseada</p>
+
 {% endblock%}

@@ -1,0 +1,24 @@
+
+{% extends "blogapp/padre.html" %}
+
+{% load static %}
+
+{% block contenido %}
+
+<form align="center" action="alta_cursos" method="POST">
+    {% csrf_token %}
+    <p>Ingresar un Curso: </p>
+    <p>Nombre:</p>
+    <input type="text" name="nombre">
+    <p>Area: </p>
+    <input type="text" name="area">
+
+<br>
+<br>
+
+    <input type="submit" value="Enviar">
+<br>
+<br>
+</form>
+
+{% endblock%}

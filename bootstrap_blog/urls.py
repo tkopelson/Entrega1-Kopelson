@@ -19,8 +19,12 @@ from blogapp import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', views.index),
-    path('readme/', views.readme),
-    path('readme/alta_alumnos', views.alta_alumno)
-    #path('about.html', views.about, name='about'),
+    path('', views.home),
+    path('home', views.home),
+    path('mostrar_readme', views.readme),
+    path('alta_alumnos', views.alta_alumno),
+    path('alta_cursos', views.alta_cursos),
+    path('alta_graduados', views.alta_graduados),
+    path('buscar_alumnos', views.buscar_alumnos),
+    path('buscar', views.buscar),
 ]
